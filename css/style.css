@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    background: #FAFAFA;
+    overflow:hidden ;
+}
+
+/* Main Styling */
+
+header{
+    background: #fff; 
+   width: 100%;
+   margin-bottom: 4.4375em;
+   padding: 0.75em 1em;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration:none;
+    color: black;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav .CloseMenu , .icons i{
+    display: none; 
+    font-size: 2rem; 
+    cursor: pointer;
+}
+
+.OpenMenu{
+  display: none;
+  font-size: 2em;
+  margin: 1.5em;
+  cursor: pointer;  
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.center {
+  display: flex;
+ justify-content: center;
+}
+
+.header-wrapper, .header-wrapper2{
+    display: flex;
+}
+
+.header-wrapper2{
+    justify-content: space-between;
+}
+
+header h3{
+    font-weight: 700;
+}
+
+.article-img{
+    width:  100%;
+    margin: 2.1875em 0;
+}
+
+/* Typology */
+
+
+
+/* Media Queries */
+
+@media(max-width:800px){
+    
+
+    nav .menu-list .closemenu{
+        display: block;
+        position: absolute;
+        top: 1.25em;
+        right: 1.25em;
+    }
+    nav .OpenMenu{
+        display: block;
+    }
+    nav .menu li a:hover{
+        background: none;
+        color: orangered;
+        font-size: 1.6em;
+    }
+    
+    .icons i{
+        display: inline-block;
+        padding: 0.75em; 
+    }
+    .menu-list {
+        height: 100vh;
+        position:fixed;
+        top:0;
+        right:0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transform: top 1s ease;
+        display: none ;
+    }
+}
