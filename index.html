@@ -9,39 +9,75 @@
         <!-- Google Fonts  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;600;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;600;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <header>
-            <nav>
-                <img class="logo" src="./images/logo.png"/>
-                <div class="OpenMenu" data-menu="menu"><i class="fa-solid fa-bars"></i></div>
-                <ul class="menu-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <div class="CloseMenu"><i class="fa-solid fa-xmark"></i></div>
-                    <span class="icons">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <i class="fa-brands fa-square-instagram"></i>
-                        <i class="fa-brands fa-square-twitter"></i>
-                </ul> 
-            </nav>        
+            <div class="container flex">
+                <span class="flex">
+                 <img src="images/logo.png" class="logo">
+                    <h2 class="logo-title">My learning journal</h2></span>  
+                <nav class="wide-nav">   
+                    <div class="menu-flex">
+                        <a href="#">Home</a>
+                        <a href="#">About Me</a>
+                    </div>          
+                </nav>
+                <button class="hamburger" id="hamburger"><div class="bar"></div></button>
+             </div>
         </header>
-        <main>
-           <div class="container">
-                <div class="date">    
-                    <p>January 07, 2023</p>
-                </div>
-                <div class="article">
-                    <h1>My New journey as a developer.</h1>
-                    <p>After several months of learning in the learning on YouTube and Freecodecamp.org, I've made the big jump over to the Scrimba to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
-                </div>
-                <div class="center">
-                    <img class="article-img" src="images/article-image.png" alt="A beautiful sunset with a laptop on a desk">
-                </div>
-            </div> 
-            
-        </main>
-        <script src="app.js"></script>
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <div class="icons-div">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+            </div>
+        </nav>
     </body>
+     
+            <main>
+                <div class="wrapper">
+                    <div class="date">    
+                        <p>January 07, 2023</p>
+                    </div>
+                    <div class="article-title">
+                        <h1>My New journey as a developer.</h1>
+                        <p>After several months of learning on YouTube and Freecodecamp.org, I've made the big jump over to the Scrimba to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+                    </div>
+                </div>
+                <div class="post-container"> 
+                     <!-- Blog Post Grid section -->
+                      <h3 class="center">Recent Posts</h3></br>
+                    <div class="grid">
+                        <div class="post-one">
+                            <a href="#"><img class ="post-img" src="./images/article-image-01.png" alt="A laptop showing a website"/></a>
+                            <p class="post-date">January 08, 2023</p></br>
+                            <h2>Blog #1</h2></br>
+                            <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                        </div>
+                        <div class="post-two">
+                            <a href="#"><img class ="post-img" src="./images/article-image-02.png" alt="A lightbulb moment!"/></a>
+                            <p class="post-date">January 09, 2023</p></br>
+                            <h2>Blog #2</h2></br>
+                            <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                        </div>
+                        <div class="post-three">
+                            <a href="#"><img class ="post-img" src="./images/article-image-03.png" alt="A laptop with a code editor open next to a plant!"/></a>
+                            <p class="post-date">January 10, 2023</p></br>
+                            <h2>Blog #3</h2></br>
+                            <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                        
+                        </div>
+                        <div class="post-five"></div>
+                    </div>
+            
+            </main>
+            <footer class="center">
+                <strong><p>My Learning Journal</p></strong>
+                <p>Copyright ©2022</p>
+            </footer>
+    <script src="app.js"></script>
 </html>
