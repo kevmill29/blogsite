@@ -11,16 +11,13 @@ background-color: #F2F7F2;
 }
 
 header{
+    
+    justify-content: space-between;
+    max-width: 1600px;
 
     color: #131111;
     h2{
         font-family: 'Sofia Sans', sans-serif;
-    }
-    .container{
-        padding: 2em 1.25em ;
-        justify-content: space-between;
-        max-width: 1600px;
-
     }
     a{
         padding: 20px;
@@ -28,7 +25,9 @@ header{
         color: inherit;
     }
 }
-
+.container{
+    padding: 2em 1.25em ;
+}
 .flex{
     display: flex;
     flex-direction: row;
@@ -39,15 +38,14 @@ header{
     height: 1.2em;
     
 }
-
+.banner{
+    text-decoration: none;
+}
 @media(max-width:768px){
-.wide-nav{
+.center, .wide-nav{
     display: none;
 }
-.center{
-    display: none;
-}
-.article-img, .post-img{
+ .post-img{
     width:  100%;
     margin: 1em 0;
 }
@@ -129,7 +127,44 @@ position: relative;
     .hamburger{
         display: none;
     }
-    
+    .logo{
+        width:2.141em;
+        height: 2.141em;
+    }
+    .container{
+        padding: 1.856em 3.313em; 
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1.625em ;
+        
+    }
+    .post-img{
+        margin: 1em 1em;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 0.8em;
+        height: 14.5em;
+    }
+    .post{
+        margin: 0 auto;
+    }
+    header{
+        padding:3.3125em;
+    }
+    .article-title, .article{
+        padding: 4.43em 7.625em;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .article-img{
+        margin-left: 3.3125em;
+        margin-right: 3.3125em;
+        width: 61.1875em;
+    }
 }
 
 .mobile-nav.is-active{
@@ -180,3 +215,20 @@ footer{
     margin:0;
     padding: 2em;
 }
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.post-container a{
+    color: black;
+    font-size: 14px;
+}
+.viewmore{
+    padding: 2em 0 3.188em 0;
+}
+
