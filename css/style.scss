@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body{
     margin: 0;
@@ -10,27 +11,25 @@ body{
 background-color: #F2F7F2;
 }
 
+
 header{
     
-    justify-content: space-between;
-    max-width: 1600px;
-
+   
     color: #131111;
     h2{
         font-family: 'Sofia Sans', sans-serif;
     }
     a{
-        padding: 20px;
+        padding-left: 1.25em;
         text-decoration: none;
         color: inherit;
     }
 }
-.container{
-    padding: 2em 1.25em ;
-}
+
 .flex{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo{
@@ -38,6 +37,7 @@ header{
     height: 1.2em;
     
 }
+
 .banner{
     text-decoration: none;
 }
@@ -49,6 +49,24 @@ header{
     width:  100%;
     margin: 1em 0;
 }
+header, .article-img, .grid, .article-title, .article{
+    padding:1.25em;
+}
+ .hidden i {
+    display: none;
+}
+.about-title{
+    display: flex;
+    flex-direction: column;
+}
+}
+.wrap-img{
+    width: 11.375em;
+    height: 8.375em;
+    padding-right:32px;
+    border-radius:50%;
+    background-image:url('/images/kevin.jpg') ;
+    background-size: cover;
 }
 
 .hamburger{
@@ -131,9 +149,7 @@ position: relative;
         width:2.141em;
         height: 2.141em;
     }
-    .container{
-        padding: 1.856em 3.313em; 
-    }
+  
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -146,25 +162,25 @@ position: relative;
         width: 100%;
         margin: 0 auto;
         padding-bottom: 0.8em;
-        height: 14.5em;
+        height: auto;
     }
     .post{
         margin: 0 auto;
     }
-    header{
-        padding:3.3125em;
+    header, .article-img, .grid, .about-title{
+        padding:2.25em 2.3125em;
     }
-    .article-title, .article{
-        padding: 4.43em 7.625em;
+    .article-title, .article {
+        padding: 1.43em 7.625em;
     }
     h3{
         font-size: 24px;
     }
-    .article-img{
-        margin-left: 3.3125em;
-        margin-right: 3.3125em;
-        width: 61.1875em;
+    .icons-div{
+        margin-top: 40px;
     }
+   
+  
 }
 
 .mobile-nav.is-active{
@@ -232,3 +248,15 @@ footer{
     padding: 2em 0 3.188em 0;
 }
 
+.recent-posts{
+    margin-bottom: 1.5em;
+}
+
+.article-img{
+    width: 100%;
+    
+}
+
+i:hover, i:active, a:hover, a:active{
+    opacity: 0.8;
+}
